@@ -1,4 +1,4 @@
-# Data Structure in Python
+# Data Structures in Python
 
 This is a repo related to the following course in College LaSalle, Montreal:
 
