@@ -1,0 +1,12 @@
+name: ds-lasalle
+channels:
+  - defaults
+  - anaconda
+  - conda-forge
+dependencies:
+  - python=3.9
+  - numpy
+  - pandas
+  - pip
+  - pip:
+      - streamlit
