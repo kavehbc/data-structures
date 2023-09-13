@@ -1,8 +1,4 @@
 # local files #
-streamhub-users.json
-streamhub-users.db
-stream/*.out
-stream/*.err
 # Sphinx and mkdoc documentation #
 docs/_build/
 maindocs/_build/
