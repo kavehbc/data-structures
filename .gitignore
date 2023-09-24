@@ -1,4 +1,6 @@
 # local files #
+# catboost files
+catboost_info/
 # Sphinx and mkdoc documentation #
 docs/_build/
 maindocs/_build/
@@ -73,6 +75,7 @@ instance/
 *.vscode*
 .DS_Store?
 ehthumbs.db
+Icon?
 Thumbs.db
 .Rproj.user
 .httr-oauth
