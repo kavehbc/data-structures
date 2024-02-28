@@ -1,0 +1,4 @@
+numpy
+imageio
+pillow
+streamlit-image-select
