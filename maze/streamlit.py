@@ -80,10 +80,14 @@ def step(i, j, fn, matrix=None, deep_path=[], final_path=[], end_point=(0, 0)):
 
 
     else:
-        step(i + 1, j, fn, matrix, deep_path, final_path, end_point)
+        # left
         step(i, j - 1, fn, matrix, deep_path, final_path, end_point)
+        # right
         step(i, j + 1, fn, matrix, deep_path, final_path, end_point)
+        # up
         step(i - 1, j, fn, matrix, deep_path, final_path, end_point)
+        # down
+        step(i + 1, j, fn, matrix, deep_path, final_path, end_point)
         if (i, j) in deep_path or matrix[(i, j)] > 0:
             matrix[(i, j)] = -2
             final_path.pop()
@@ -129,7 +133,7 @@ def main():
 
         # instead of saving the file locally, and then loading it,
         # we directly store it in the binary format in memory
-        bytes_image = iio.imwrite("<bytes>", images, duration=5.5, extension=".gif")
+        bytes_image = iio.imwrite("<bytes>", images, duration=5.5, loop=0, extension=".gif")
         frames = iio.imread(bytes_image, index=None)
         byte_stream = io.BytesIO(bytes_image)
         contents = byte_stream.read()
