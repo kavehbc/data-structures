@@ -1,4 +1,4 @@
-name: ds-lasalle
+name: ai
 channels:
   - defaults
   - anaconda
@@ -7,6 +7,8 @@ dependencies:
   - python=3.9
   - numpy
   - pandas
+  - pillow
+  - matplotlib
   - pip
   - pip:
       - streamlit
