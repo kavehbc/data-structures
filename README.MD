@@ -3,6 +3,7 @@
 This is a repo related to the following course in College LaSalle, Montreal:
 
 - Introduction to Data Structures (420-A10-AS)
+- Data Structures (420-DS4-AS)
 
 ___
 ## Lecturer
